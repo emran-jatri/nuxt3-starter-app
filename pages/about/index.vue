@@ -30,9 +30,10 @@ console.log("redirectedFrom", route.redirectedFrom);
 
 // redirect
 // passing 'to' as a string
-setTimeout(async () => {
-  await navigateTo("/");
-}, 3000);
+// setTimeout(async () => {
+//   await navigateTo("/");
+// }, 3000);
+
 // // ... or as a route object
 // await navigateTo({ path: '/search' })
 // // ... or as a route object with query parameters
