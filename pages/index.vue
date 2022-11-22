@@ -18,6 +18,17 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'Home Page',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+  bodyAttrs: {
+    class: 'test'
+  },
+  script: [ { children: 'console.log(\'Hello world\')' } ]
+})
+
 const route = useRoute();
 
 console.log(route);
@@ -29,5 +40,5 @@ console.log('name',route.name);
 console.log('params',route.params);
 console.log('path',route.path);
 console.log('query',route.query);
-console.log('redirectedFrom',route.redirectedFrom);
+console.log('redirectedFrom', route.redirectedFrom);
 </script>
