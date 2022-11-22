@@ -5,3 +5,19 @@
     </div>
   </div>
 </template>
+
+
+<script setup>
+const route = useRoute();
+
+console.log(route);
+console.log('fullPath',route.fullPath);
+console.log('hash',route.hash);
+console.log('matched',route.matched);
+console.log('meta',route.meta);
+console.log('name',route.name);
+console.log('params',route.params);
+console.log('path',route.path);
+console.log('query',route.query);
+console.log('redirectedFrom',route.redirectedFrom);
+</script>
